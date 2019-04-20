@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.top1{
+    height: 40px;
+    background: rgb(242, 242, 242);
+}
+.follow,.space,.service{
+    float: left;
+}
+.connection{
+    line-height: 40px;
+    position: relative;
+    float: right;
+    width: 125px;
+}
