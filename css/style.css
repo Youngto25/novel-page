@@ -16,13 +16,138 @@ ul,ol{
 .top1{
     height: 40px;
     background: rgb(242, 242, 242);
+    text-align: center;
 }
-.follow,.space,.service{
-    float: left;
+
+.container{
+    display: inline-block;
+    width: 1200px;
 }
+
 .connection{
-    line-height: 40px;
-    position: relative;
-    float: right;
     width: 125px;
+    float: right;
+}
+
+.follow{
+    display: inline-block;
+    line-height: 40px;
+}
+
+.follow >li{
+    float: left;
+    cursor: pointer;
+}
+
+.follow >li:nth-child(2){
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.follow1{
+    position: relative;
+    display: none;
+    width: 150px;
+    height: 75px;
+    border: 2px solid red;
+    right: -1325px;
+}
+
+.follow1::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom-color: red;
+    right: 0;
+    top: -30px;
+}
+
+.follow1::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom-color: white;
+    right: 0;
+    top: -28px;
+}
+
+.follow2{
+    position: relative;
+    display: none;
+    width: 150px;
+    height: 75px;
+    border: 2px solid red;
+    right: -1500px;
+}
+
+.follow2::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom-color: red;
+    left: 0;
+    top: -30px;
+}
+
+.follow2::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom-color: white;
+    left: 0;
+    top: -28px;
+}
+
+.header{
+    text-align: center;
+}
+
+.brand{
+    height: 100px;
+    background: #fbfaf8;
+}
+
+.logo{
+    float: left;
+    margin-top: 21px;
+    width: 175px;
+    height: 60px;
+}
+
+.search{
+    float: right;
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+    border: 2px solid #cab389;
+}
+
+.search-input{
+    width: 260px;
+    height: 100%;
+    line-height: 40px;
+    padding-left: 10px;
+    color: #666;
+    border: 0 none;
+    background: #f2f2f2;
+    box-sizing: border-box;
+}
+
+.search-btn{
+    float: right;
+    width: 40px;
+    height: 100%;
+    background-color: #cab389;
+    background-image: url(http://www.zhuishushenqi.com/images/icon/search.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
 }
